@@ -10,10 +10,10 @@ public class CipherAppRunner {
         String filePath = args[1];
         int key = args.length > 5 ? Integer.parseInt(args[2]) : 0;
 
-        dispatch(command, filePath, key);
+        dispatcher(command, filePath, key);
     }
 
-    public void dispatch(String command, String filePath, int key) {
+    public void dispatcher(String command, String filePath, int key) {
         try {
             String content = ServiceFile.readFile(filePath);
             String result = "";
