@@ -3,7 +3,7 @@ import java.io.IOException;
 public class CipherAppRunner {
     public void start(String[] args) {
         if (args.length < 5) {
-            System.out.println("Usage: java -jar myApp.jar <ENCRYPT|DECRYPT|BRUTE_FORCE> <filePath> [key]");
+            System.out.println("Please use file format: java -jar myApp.jar <ENCRYPT|DECRYPT|BRUTE_FORCE> <filePath> [key]");
             return;
         }
         String command = args[0].toUpperCase();
@@ -16,8 +16,8 @@ public class CipherAppRunner {
     public void dispatcher(String command, String filePath, int key) {
         try {
             String content = ServiceFile.readFile(filePath);
-            String result = "";
-            String outputFilePath = "";
+            String result;
+            String outputFilePath;
 
             switch (command) {
                 case "ENCRYPT":
