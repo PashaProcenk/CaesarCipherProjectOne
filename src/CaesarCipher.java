@@ -1,5 +1,5 @@
 public class CaesarCipher {
-    private static final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,«»\"'!:? -;(){}[]@#%^&*/\\<>~`=_+|";
+    public static final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,«»\"'!:? -;(){}[]@#%^&*/\\<>~`=_+|";
 
     public static String encrypt(String text, int key) {
         return shiftText(text, key);

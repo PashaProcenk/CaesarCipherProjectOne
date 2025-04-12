@@ -1,6 +1,6 @@
 public class BruteForceKey {
         public static String bruteForce(String text){
-            for (int i = 1; i < 88; i++) {
+            for (int i = 1; i < CaesarCipher.ALPHABET.length(); i++) {
                 String decrypted = CaesarCipher.decrypt(text,i);
                 if(isSyllable(decrypted)){
                     return decrypted;
