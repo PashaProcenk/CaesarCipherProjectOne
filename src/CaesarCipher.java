@@ -9,7 +9,7 @@ public class CaesarCipher {
         return shiftText(text, -key);
     }
 
-    private static String shiftText(String text , int shift) {
+    public static String shiftText(String text , int shift) {
         StringBuilder result = new StringBuilder();
         for (char c : text.toCharArray()) {
             int index = ALPHABET.indexOf(c);
