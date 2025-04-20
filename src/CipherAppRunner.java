@@ -1,4 +1,3 @@
-import java.io.IOException;
 
 public class CipherAppRunner {
     public void start(String[] args) {
