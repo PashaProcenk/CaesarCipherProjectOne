@@ -11,7 +11,7 @@ public class CipherAppRunner {
         String filePath = args[CommandConstants.FILE_INDEX];
         int key = args.length > CommandConstants.KEY_INDEX ? Integer.parseInt(args[CommandConstants.KEY_INDEX]) : 0;
 
-        Dispatcher.run(command, filePath, key);
+        new Dispatcher().run(command, filePath, key);
     }
 }
 
